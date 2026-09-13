@@ -1,0 +1,24 @@
+a = int(input("Enter 1st number: "))
+b = int(input("Enter 2nd number: "))
+c = int(input("Enter 3rd number: "))
+
+if a == b == c:
+    print("All three numbers are equal")
+
+elif a == b and a > c:
+    print("a and b are equal and greater than c")
+
+elif a == c and a > b:
+    print("a and c are equal and greater than b")
+
+elif b == c and b > a:
+    print("b and c are equal and greater than a")
+
+elif a > b and a > c:
+    print("a is greatest")
+
+elif b > a and b > c:
+    print("b is greatest")
+
+else:
+    print("c is greatest")
