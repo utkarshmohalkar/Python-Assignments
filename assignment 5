@@ -1,0 +1,8 @@
+import re 
+def check_chr(s): 
+    return bool(re.fullmatch(r'[A-Za-z0-9]+', s)) 
+text = input("Enter a string: ") 
+if check_chr(text): 
+    print("The string contains only a-z, A-Z, and 0-9.") 
+else: 
+    print("The string contains other characters.")
